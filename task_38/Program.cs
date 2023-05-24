@@ -13,7 +13,7 @@ double Min (double []arr)
         {
             min=arr[i];
         }
-        //else i++;
+       
     }
     return min;
 }
@@ -27,7 +27,7 @@ double Max (double []arr)
         {
             max=arr[i];
         }
-        //else i++;
+       
     }
     return max;
 }
