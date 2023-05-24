@@ -7,13 +7,13 @@
 double Min (double []arr)
 {
     double min =arr[0];
-    for (int i = 1; i < arr.Length-1; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i]<min)
         {
             min=arr[i];
         }
-        else i++;
+        //else i++;
     }
     return min;
 }
@@ -21,13 +21,13 @@ double Min (double []arr)
 double Max (double []arr)
 {
     double max =arr[0];
-    for (int i = 1; i < arr.Length-1; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i]>max)
         {
             max=arr[i];
         }
-        else i++;
+        //else i++;
     }
     return max;
 }
