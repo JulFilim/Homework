@@ -26,7 +26,7 @@ int Count (double []arr)
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i]<0) count++;
+        if (arr[i]>0) count++;
     }
     //Console.WriteLine(count); проверка корректности выполнения логики
     return count;
@@ -36,5 +36,5 @@ string mass = InputMass();
 string []splitMass =mass.Split(' ');
 double [] newMass = new double[splitMass.Length];
 CreateArray(splitMass,newMass);
-Console.WriteLine($"Количество чисел меньше 0: {Count (newMass)}");
+Console.WriteLine($"Количество чисел больше 0: {Count (newMass)}");
 System.Console.WriteLine();
